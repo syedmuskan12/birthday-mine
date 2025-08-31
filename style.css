@@ -1,0 +1,119 @@
+/* Fonts and Background */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  background: rgba(0,0,0,0.9);
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 750px;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Text Effects */
+h1 {
+  margin-bottom: 25px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.gold-text {
+  color: #FFD700;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+}
+
+.glow-text {
+  font-size: 2.2em;
+  color: #00FFFF;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Message Box */
+#message-box {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 30px rgba(255, 215, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+#message {
+  font-size: 20px;
+  line-height: 1.6;
+  white-space: pre-line;
+  text-align: left;
+  opacity: 0;
+  animation: fadeInText 0.8s forwards;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+#day-counter {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  color: #FFD700;
+  text-shadow: 0 0 8px #FFD700;
+}
+
+/* Buttons */
+button {
+  background-color: #FFD700;
+  color: #0f2027;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #FFD700;
+}
+
+button:hover {
+  background-color: #e6c200;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #FFD700;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Animations */
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF; }
+  to { text-shadow: 0 0 20px #00FFFF, 0 0 40px #00FFFF, 0 0 60px #00FFFF; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInText {
+  to { opacity: 1; }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Month Countdown</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Start Page -->
+    <div id="start-page">
+      <h1 class="glow-text">Ahh! It's my baby’s Birthday Month 🥳❤️</h1>
+      <button id="start-btn">Start Countdown</button>
+    </div>
+
+    <!-- Countdown Page -->
+    <div id="countdown-page" class="hidden">
+      <h1 class="gold-text">🎉 22-Day Birthday Countdown 🎉</h1>
+      <div id="message-box">
+        <p id="message">Loading...</p>
+      </div>
+      <div id="controls">
+        <button onclick="prevDay()">⬅ Previous</button>
+        <span id="day-counter">Day 1</span>
+        <button onclick="nextDay()">Next ➡</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
